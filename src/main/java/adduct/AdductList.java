@@ -11,8 +11,8 @@ public class AdductList {
 
     static {
         Map<String, Double> mapMZPositiveAdductsTMP = new LinkedHashMap<>();
-        mapMZPositiveAdductsTMP.put("[M+H]+", -1.007276d);
-        mapMZPositiveAdductsTMP.put("[M+2H]2+", -2.014552d);
+        mapMZPositiveAdductsTMP.put("[M+H]+", -1.007276d); //adduct mass, we need to subtract it from the adduct since its positive and then multiply
+        mapMZPositiveAdductsTMP.put("[M+2H]2+", -1.007276d);
         mapMZPositiveAdductsTMP.put("[M+Na]+", -22.989218d);
         mapMZPositiveAdductsTMP.put("[M+K]+", -38.963158d);
         mapMZPositiveAdductsTMP.put("[M+NH4]+", -18.033823d);
